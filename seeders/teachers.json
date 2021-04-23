@@ -1,0 +1,26 @@
+[
+    {
+      "firstname": "Bambang",
+      "lastname": "Suprapto",
+      "email": "jokosantoso@sekolah.id",
+      "gender": "male"
+    },
+    {
+      "firstname": "Rukmana",
+      "lastname": "Fatmawati",
+      "email": "rukmanafatmawati@sekolah.id",
+      "gender": "female"
+    },
+    {
+      "firstname": "Butet",
+      "lastname": "Naiborhu",
+      "email": "butetnaiborhu@sekolah.id",
+      "gender": "female"
+    },
+    {
+      "firstname": "Yulius",
+      "lastname": "Prawiranegara",
+      "email": "yuliusprawiranegara@sekolah.id",
+      "gender": "male"
+    }
+  ]

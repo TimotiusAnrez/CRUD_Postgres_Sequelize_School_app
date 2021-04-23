@@ -1,0 +1,30 @@
+[
+    {
+      "firstname": "Joko",
+      "lastname": "Santoso",
+      "email": "jokosantoso@sekolah.id",
+      "gender": "male",
+      "birthdate": "2005-06-28"
+    },
+    {
+      "firstname": "Lukman",
+      "lastname": "Riki",
+      "email": "lukmanriki@sekolah.id",
+      "gender": "male",
+      "birthdate": "2004-04-13"
+    },
+    {
+      "firstname": "Siti",
+      "lastname": "Nurhayati",
+      "email": "sitinurhayati@sekolah.id",
+      "gender": "female",
+      "birthdate": "2005-05-12"
+    },
+    {
+      "firstname": "Rika",
+      "lastname": "Risti",
+      "email": "rikaristi@sekolah.id",
+      "gender": "female",
+      "birthdate": "2005-01-03"
+    }
+  ] 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel='stylesheet' href='/css/main.css' />
+    <title>Student List</title>
+</head>
+<body>
+    <nav>
+        <a href="/">home</a>
+        <a href="/students">students</a>
+        <a href="/teachers">teachers</a>
+        <a href="/subjects">subjects</a>
+    </nav>
+    <div class="header">
+        <h1>
+            Student List
+        </h1>
+        <a href="/students/add">
+            <button>add student</button>
+        </a>
+    </div>
+    <table>
+
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Birthdate</th>
+                <th>Option</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(let i = 0; i < data.length; i++){ %>
+                <tr>
+                    <td><%= data[i].id %></td>
+                    <td><%= data[i].firstname %></td>
+                    <td><%= data[i].lastname %></td>
+                    <td><%= data[i].email %></td>
+                    <td><%= data[i].gender %></td>
+                    <td><%= data[i].birthdate %></td>
+                    <td>
+                        <a href="/students/edit/<%= data[i].id %>">
+                            <button>edit</button>
+                        </a>
+                        ||
+                        <a href="/students/delete/<%= data[i].id %>">
+                            <button>delete</button>
+                        </a>
+                    </td>
+                </tr>
+            <%} %>
+        </tbody>
+        
+    </table>
+    
+    
+</body>
+</html>

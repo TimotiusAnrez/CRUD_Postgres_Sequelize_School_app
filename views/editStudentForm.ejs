@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel='stylesheet' href='/css/main.css' />
+    <title>Add student</title>
+</head>
+<body>
+    <nav>
+        <a href="/">home</a>
+        <a href="/students">students</a>
+        <a href="/teachers">teachers</a>
+        <a href="/subjects">subjects</a>
+    </nav>
+    <div class="header">
+        <h1>Edit student</h1>
+    </div>
+    <form action="/students/edit/<%= data.id %>" method="POST">
+        <label for="First Name"></label><br>
+        <input type="text" name="firstname" value="<%= data.firstname %>"><br>
+        <label for="Last Name">Last Name</label><br>
+        <input type="text" name="lastname" value="<%= data.lastname %>"><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" value="<%= data.email %>"><br>
+        <label for="gender">Gender</label><br>
+        <select name="gender"><br>
+            <option value="Male" <%= data.gender.toLowerCase() === "male" ? 'selected' : '' %>>Male</option>
+            <option value="Female" <%= data.gender.toLowerCase() === "female"? 'selected' : '' %>>Female</option>
+        </select><br>
+        <label for="birthdate">Birthdate</label><br>
+        <input type="date" name="birthdate" value="<%= data.birthdate %>"><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
